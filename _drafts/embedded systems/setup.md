@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "Setup"
+date:   2023-11-02 15:35:57 +0300
+category: Embedded Systems
+---
+
+# Setup
+
+
+## Traditions...
+
+Writing a `"Hello, World!"` program is a time-honored [tradition][ancient_tradition] that continues to be relevant
+today. This simple program serves as a sanity check before diving into more complex tasks. It allows you to test 
+your coding environment  and ensure everything is functioning correctly. Interestingly, some folks also consider 
+this program to be a harbinger of good luck.
+
+Oh! Where are my manners? Here is a very quick setup tour to begin with. Moreover, Don't forget to check out [Mastering 
+STM32] [mastering_stm32]. This books is a good resource to familiarize with the STM32 environment and would be 
+considered as one of the most comprehensive introductory book in the STM32 domain.
+
+## Quick Setup Tour
+* **`Compiler` and `MSYS2`:** Since we're using C as our primary language, you'll need a compiler, specifically [GCC][gcc]. 
+  However, don't just download GCC by itself; opt for MSYS2 for a more complete environment. Even if you're not using 
+  Visual Studio, they offer a helpful [guide][msys_guide] for this setup.
+
+
+* **Download and setup `CubeIDE`, `CubeMX`, and `CubeProgrammer`:** 
+  * [CubeIDE][cube_ide]: Our base IDE for generating HAL codes.
+  * [CubeMX][cube_mx]: Our configuration tool that will be our trusty companion throughout the project.
+  * [CubeProgrammer][cube_programmer]: While CubeIDE is a valuable tool, it's based on the older Eclipse platform
+    that has since gone open source. You might want to complement it with your favorite text editor or integrated
+    development environment (IDE) for more modern development experiences.
+
+
+
+* **Text Editor or IDE:** While CubeIDE is a valuable tool, it's based on the older Eclipse platform that has since
+  gone open source. You might want to complement it with your favorite text editor or integrated development
+  environment (IDE) for more modern development experiences.
+
+---
+**NOTE**
+
+During my experimentation with various development tools, I would like to recommend you to stick 
+with your favorite IDE. My favorite one is [Clion][clion] as it integrates well with CMake, in which I will use a 
+template to automate CMake file during the projects.  However, for your convenience, you'll still need STM's 
+software. For example, I generate codes using CubeIDE and then switch back to CLion. If configurations need 
+adjustments, I can rely on CubeMX to assist me in the process.
+
+---
+
+## Creating the First Program
+1. Launch `CubeIDE`
+2. Go to `File > New > STM32 Project`.
+3. In the target selection part, navigate to `Board Selector`.
+4. Enter your _Commercial Part Number_ (for example, mine was `STM32F407G-DISC1`).
+5. Select your board from the list.
+6. Click `Next`.
+7. Provide a `Project Name` and Click `Next`
+8. In the `Code Generator Options`, choose the option that says `Copy only the necessary library files`.
+9. Click `Finish`.
+10. Ensure that the option to Initialize all peripherals with their `Default Mode` is set to **Yes**.
+
+
+Now, you should see your Pinout Configuration tab in CubeIDE.
+
+1. In **CubeIDE**, open the` Pinout Configuration` tab, which is opened by default. This tab displays your 
+   microprocessor's default pin
+   configuration, with some peripherals already configured and named for your convenience.
+2. Check the `Clock Configuration` tab, where you'll find clock settings already configured.
+3. Next, navigate to `Project Manager`, and on the **left-hand side**, select `Code Generator`.
+4. In the On `Generated File` section, opt for `Generate peripheral initialization as a pair of '.c/.h' files per 
+   peripheral`.
+
+With these essentials in place and the recommended reading, you're well-equipped to embark on your embedded systems 
+journey. Keep in mind that the following sections won't delve into every detail, but they'll provide you with a 
+solid foundation.
+
+
+[ancient_tradition]: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
+[gcc]:  https://gcc.gnu.org/
+[msys_guide]: https://code.visualstudio.com/docs/cpp/config-mingw
+[cube_ide]: https://www.st.com/en/development-tools/stm32cubeide.html
+[cube_mx]: https://www.st.com/en/development-tools/stm32cubemx.html
+[cube_programmer]: https://www.st.com/en/development-tools/stm32cubeprog.html
+[clion]: https://www.jetbrains.com/clion/
+[mastering_stm32]: https://www.carminenoviello.com/mastering-stm32/
