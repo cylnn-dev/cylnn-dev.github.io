@@ -29,10 +29,11 @@ github_username:  UltimateBambi
 
 # Build settings
 #theme: jekyll-theme-console
-remote_theme: b2a3e8/jekyll-theme-console
+remote_theme: cylnn-dev/jekyll-theme-console
 plugins:
   - jekyll-feed
   - jemoji
+  - jekyll-remote-theme
 
 kramdown:
   syntax_highlighter: rouge
