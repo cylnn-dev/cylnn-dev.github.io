@@ -8,6 +8,12 @@ tag: Digital Signal Processing on STM32F4
 The best way to truly learn something is by diving deep into it. That's precisely what we'll do right now, combining 
 two fundamental elements: **UART** and **LED Blinking**. In this project, the board will communicate with a PC via_UART_. It will serve as a _command-line interface_, where users are prompted to input commands, triggering actions that we'll explore in just a moment.
 
+---
+_table of contents_
+1. TOC
+{:toc}
+---
+
 ## Setup
 
 Configure your UART with the default settings. We will use UART in polling mode and not bother with DMA just yet. `115200 baudrate` is the maximum speed [old UART][old_uart] can give it to you. This baudrate translates to _bits per second_ in our context. If your one sample is `16 bits`, then `115200 / 16 = 7200 (half_words per seconds)`, allowing for the transmission of only 7200 samples per second through this communication line. 

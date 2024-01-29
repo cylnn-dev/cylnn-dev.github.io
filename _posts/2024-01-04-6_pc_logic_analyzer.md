@@ -6,6 +6,14 @@ tag: Digital Signal Processing on STM32F4
 
 # Before Continuing: Serial COM Port Analyzer
 
+**_This project is on GitHub: [link](https://github.com/cylnn-dev/pc_serial_com_port_analyzer)_**
+
+---
+_table of contents_
+1. TOC
+{:toc}
+---
+
 ## Summary of the Application
 
 In this project, the goal was to process and analyze digital signals, and we have taken a small step in signal processing. Now, it is time to analyze the signals to determine if we are achieving meaningful results.
@@ -19,7 +27,7 @@ As seen in the figure, the left window displays the received packages in the tim
 
 The project was implemented in Python using external libraries Pyqt6, sounddevice, and numpy. The plots for the received data may seem familiar, as they originate from matplotlib. There is a recommended approach on how to use the matplotlib backend with Pyqt, detailed in [1].
 
-This application is designed as multithreaded, and during development, GUI freezes and packet loss were observed. The details are left for the reader to explore, as they delve deeper into this project series.
+This application is designed to be multi-threaded due to GUI freezing and packet losses. Further details are left for the reader to explore as they delve deeper into this project series.
 
 In short, the app consists of:
 

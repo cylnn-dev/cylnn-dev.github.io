@@ -6,6 +6,12 @@ tag: Digital Signal Processing on STM32F4
 
 # 3 Projects: From Complex To Much Complex
 
+---
+_table of contents_
+1. TOC
+{:toc}
+---
+
 I am writing these posts at the end of the project [1]. On the next pages, there should be 3 projects with different approaches. 
 
 I will describe the problems I faced during the construction of these three projects and how I solved them. While creating this series, I noticed that people struggle to process even the simplest digitla signals in the STM32 environment due to limited resources. That's why we aimed to keep the projects simple and easy to understand. Unfortunately, in embedded systems, what seems simple often comes with a bunch of technical challenges behind the scenes.

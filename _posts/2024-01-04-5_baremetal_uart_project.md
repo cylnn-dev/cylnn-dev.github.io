@@ -7,6 +7,14 @@ tag: Digital Signal Processing on STM32F4
 
 # Simplest One: Baremetal UART Project
 
+**_This project is on GitHub: [link](https://github.com/cylnn-dev/signal-processing-on-stm32)_**
+
+---
+_table of contents_
+1. TOC
+{:toc}
+---
+
 ## The main Concept
 
 

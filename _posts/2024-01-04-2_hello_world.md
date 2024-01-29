@@ -6,6 +6,12 @@ tag: Digital Signal Processing on STM32F4
 
 # Hello, World!
 
+---
+_table of contents_
+1. TOC
+{:toc}
+---
+
 Here we will, _finally_, generate the first project: **Blinking a LED**. This project is essentially the _Hello, World!_ of the embedded systems since, in the embedded domain, there is nowhere to write _Hello_.
 
 ## Write the First Program

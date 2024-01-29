@@ -4,10 +4,20 @@ category: Embedded Systems
 tag: Digital Signal Processing on STM32F4
 ---
 
+
+
 # Baremetal USB Project
+
+**_This project is on GitHub: [link](https://github.com/cylnn-dev/signal-processing-on-stm32)_**
+
 
 In this project, the signals will be transmitted via USB. With this improvement, we can finally hear the signals without experiencing jitters and pops. Let's get started!
 
+---
+_table of contents_
+1. TOC
+{:toc}
+---
 
 ## General Concepts
 "Take a look at the main(). This approach is known as a super-loop-based system, where the three functions, namely user_input_control(), audio_task(feed), and tud_task(), are called infinitely. Additionally, these repetitively called functions should probably have while loops, in which the CPU waits for some tasks, like DMA interrupts, to be fired. So, this approach involves while loops inside while loops, which can be very inefficient. However, it is still relatively simple to understand. Nevertheless, adding more complexity to this project is not recommended. Debugging bare metal can be very challenging, and the code can easily become spaghetti-like.

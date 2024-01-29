@@ -6,6 +6,14 @@ tag: Digital Signal Processing on STM32F4
 
 # RTOS USB Project: The Recommended One
 
+**_This project is on GitHub: [link](https://github.com/cylnn-dev/signal-processing-on-stm32)_**
+
+---
+_table of contents_
+1. TOC
+{:toc}
+---
+
 ## General Concept
 
 As previously discussed, bare-metal, or in this instance, super-loop approaches, played a fundamental role in adjusting the settings. They provided an opportunity to familiarize ourselves with the STM32 family and its HAL libraries, along with UART and USB protocols. In this project, all the experiences gained during the journey are utilized to raise the standard and develop a more comprehensive solution. Certain concepts have been previously addressed in other posts and will not be reiterated here for the sake of clarity.
